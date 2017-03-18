@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "mongodb": "mongodb://localhost:27017/rsaBackend",
+  "public": "../public/",
+  "auth": {
+    "token": {
+      "secret": "JTVezoClcg553CvqxC6TiYbBRwoDxHz/4jyXc7mNDi4I85ItX13/YDJ8rPUXg+fguRUQkBKCZ+BJHzJsiXz/Hg=="
+    },
+    "local": {}
+  }
+}
