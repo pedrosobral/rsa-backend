@@ -1,7 +1,7 @@
 {
   "name": "rsa-backend",
   "description": "Resposta em Sala de Aula: Aplicação de votação em tempo real para uso em sala de aula.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "",
   "main": "src/",
   "keywords": [
