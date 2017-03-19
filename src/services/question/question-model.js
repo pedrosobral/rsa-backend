@@ -11,6 +11,7 @@ const questionSchema = new Schema({
   description: { type: String },
   options: [],
   correct: Number,
+
   createdAt: { type: Date, 'default': Date.now },
   updatedAt: { type: Date, 'default': Date.now }
 });
