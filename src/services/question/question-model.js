@@ -1,15 +1,16 @@
 'use strict';
 
 // question-model.js - A mongoose model
-// 
-// See http://mongoosejs.com/docs/models.html
-// for more of what you can do here.
 
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const questionSchema = new Schema({
-  text: { type: String, required: true },
+  question: { type: {}, required: true },
+  type: { type: String, required: true, enum: ['mc', 'bool', 'free'] },
+  description: { type: String },
+  options: [],
+  correct: Number,
   createdAt: { type: Date, 'default': Date.now },
   updatedAt: { type: Date, 'default': Date.now }
 });
