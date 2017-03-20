@@ -2,8 +2,8 @@
 
 // question-model.js - A mongoose model
 
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+const mongoose  = require('mongoose');
+const Schema    = mongoose.Schema;
 
 const questionSchema = new Schema({
   question: { type: {}, required: true },
