@@ -12,6 +12,7 @@ const pollSchema = new Schema({
     type: String,
     required: true
   },
+  available: { type: Boolean, default: false },
 
   createdAt: {
     type: Date,
