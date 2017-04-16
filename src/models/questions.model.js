@@ -1,14 +1,32 @@
 'use strict';
 
 // questions-model.js - A mongoose model
-// 
-// See http://mongoosejs.com/docs/models.html
-// for more of what you can do here.
+
 module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
+
   const questions = new mongooseClient.Schema({
-    text: { type: String, required: true },
+    question: { type: {}, required: true },
+
+    type: { type: String, required: true, enum: ['mc', 'bool', 'free'] },
+
+    description: { type: String },
+
+    options: [],
+
+    correct: Number,
+
+    votes: { type: Number, default: 0},
+
+    showChart: { type: Boolean, default: false },
+
+    showAnswer: { type: Boolean, default: false },
+
+    // labels
+    labels: [{ type: mongooseClient.Schema.Types.ObjectId, ref: 'labels' }],
+
     createdAt: { type: Date, default: Date.now },
+
     updatedAt: { type: Date, default: Date.now }
   });
 

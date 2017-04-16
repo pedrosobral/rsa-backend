@@ -1,14 +1,26 @@
 'use strict';
 
 // polls-model.js - A mongoose model
-// 
-// See http://mongoosejs.com/docs/models.html
-// for more of what you can do here.
+
 module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
+
   const polls = new mongooseClient.Schema({
-    text: { type: String, required: true },
+    questions: [],
+
+    room: { type: String, required: true },
+
+    // current question available
+    available: { type: Number, default: -1 },
+
+    // has ended
+    isOver: { type: Boolean, default: false },
+
+    // TODO
+    participants: { type: Number },
+
     createdAt: { type: Date, default: Date.now },
+
     updatedAt: { type: Date, default: Date.now }
   });
 
