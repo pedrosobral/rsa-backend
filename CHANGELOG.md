@@ -1,3 +1,15 @@
+<a name="0.5.0"></a>
+# [0.5.0](https://github.com/pedrosobral/rsa-backend/compare/0.4.0...v0.5.0) (2017-04-17)
+
+
+### Features
+
+* **room:** handle online people ([c1f1c91](https://github.com/pedrosobral/rsa-backend/commit/c1f1c91))
+* **rooms:** add rooms service ([436e9d4](https://github.com/pedrosobral/rsa-backend/commit/436e9d4))
+* **rooms:** use room ([3690acb](https://github.com/pedrosobral/rsa-backend/commit/3690acb))
+
+
+
 <a name="0.4.0"></a>
 # 0.4.0 (2017-04-16)
 
