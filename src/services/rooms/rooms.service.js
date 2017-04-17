@@ -1,11 +1,10 @@
 'use strict';
 
-// Initializes the `polls` service on path `/polls`
+// Initializes the `rooms` service on path `/rooms`
 const createService = require('feathers-mongoose');
-const createModel = require('../../models/polls.model');
-const hooks = require('./polls.hooks');
-const filters = require('./polls.filters');
-const socketio = require('feathers-socketio');
+const createModel = require('../../models/rooms.model');
+const hooks = require('./rooms.hooks');
+const filters = require('./rooms.filters');
 
 module.exports = function () {
   const app = this;
@@ -13,16 +12,16 @@ module.exports = function () {
   const paginate = app.get('paginate');
 
   const options = {
-    name: 'polls',
+    name: 'rooms',
     Model,
     paginate
   };
 
   // Initialize our service with any options it requires
-  app.use('/polls', createService(options));
+  app.use('/rooms', createService(options));
 
   // Get our initialized service so that we can register hooks and filters
-  const service = app.service('polls');
+  const service = app.service('rooms');
 
   service.hooks(hooks);
 
