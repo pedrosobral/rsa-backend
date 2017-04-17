@@ -38,6 +38,7 @@ app.configure(hooks());
 app.configure(mongodb);
 app.configure(rest());
 app.configure(socketio());
+app.configure(require('./functions'));
 
 // Set up our services (see `services/index.js`)
 app.configure(services);
