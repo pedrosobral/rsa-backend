@@ -8,7 +8,7 @@ module.exports = function (app) {
   const polls = new mongooseClient.Schema({
     questions: [],
 
-    room: { type: String, required: true },
+    room: {},
 
     // current question available
     available: { type: Number, default: -1 },
