@@ -6,9 +6,9 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
 
   const student = new mongooseClient.Schema({
-      id: { type: String, required: true },
-      name: { type: String, required: true },
-      password: { type: String, required: true },
+    id: { type: String, required: true },
+    name: { type: String, required: true },
+    password: { type: String, required: true },
   });
 
   const rooms = new mongooseClient.Schema({
