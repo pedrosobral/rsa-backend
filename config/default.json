@@ -3,8 +3,33 @@
   "port": 3030,
   "public": "../public/",
   "paginate": {
-    "default": 10,
-    "max": 50
+    "default": 50,
+    "max": 100
   },
-  "mongodb": "mongodb://localhost:27017/rsa_backend"
+  "mongodb": "mongodb://localhost:27017/rsa_backend",
+  "authentication": {
+    "secret": "78fa5bca027adfdf22211302d1f102733be04aa6b0d0d2e12d9c46545bf76a42b0d5332a834d785643282718c340622e8781c57956d66a8fb37f00e65315eeb34438ae2c34d2a1007fe2fae4d73ddc1f4cecc9add3c596b69f098b66f32801edca535ef6084f9b97df90d65e1bfe3105deaa2c2ad68ea7839330dea110f94d0485aba3849510c314b88581efc242ec84b16f46262a29a1aa8e46bf9b24684bad00105a4829e6e66e4b355fb2707f839b2202ba1cb0aad8e96beb73f4f91c3488c378d1e2bd145dbfef1310626c67c3c4706f68dafb1bcb4a4a2aa924f45672a1c9b7d2f46adf1c27ccfc104e8dee1b8c3b66520b69f2ca47d0419c37a9fe9b6f",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "type": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "service": "users",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
 }
