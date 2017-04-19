@@ -1,3 +1,14 @@
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/pedrosobral/rsa-backend/compare/0.5.0...v0.6.0) (2017-04-19)
+
+
+### Features
+
+* **students:** add students to rooms ([5e92acf](https://github.com/pedrosobral/rsa-backend/commit/5e92acf))
+* **users:** add users and authentication ([73a593f](https://github.com/pedrosobral/rsa-backend/commit/73a593f))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/pedrosobral/rsa-backend/compare/0.4.0...v0.5.0) (2017-04-17)
 
