@@ -15,7 +15,7 @@ module.exports = function (app) {
     user: { type: mongooseClient.Schema.Types.ObjectId, ref: 'users' },
 
     name: { type: String, required: true },
-    code: { type: String, required: true },
+    code: { type: String, required: true, unique: true },
     students: [student],
     online: { type: Boolean, default: false },
     peopleOnline: { type: Number, default: 0 },
