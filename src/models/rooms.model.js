@@ -8,6 +8,7 @@ module.exports = function (app) {
   const student = new mongooseClient.Schema({
     id: { type: String, required: true },
     name: { type: String, required: true },
+    online: { type: Boolean, default: false },
     password: { type: String, required: true },
   });
 
@@ -18,6 +19,7 @@ module.exports = function (app) {
     code: { type: String, required: true, unique: true },
     students: [student],
     online: { type: Boolean, default: false },
+    private: { type: Boolean, default: false },
     peopleOnline: { type: Number, default: 0 },
     default: { type: Boolean, default: false },
     createdAt: { type: Date, default: Date.now },
