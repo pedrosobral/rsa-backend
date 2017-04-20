@@ -1,3 +1,22 @@
+<a name="0.7.0"></a>
+# [0.7.0](https://github.com/pedrosobral/rsa-backend/compare/0.6.0...v0.7.0) (2017-04-20)
+
+
+### Bug Fixes
+
+* **rooms:** students id should not be unique on the entire collection. ([dc59da2](https://github.com/pedrosobral/rsa-backend/commit/dc59da2))
+
+
+### Features
+
+* **hook:** add user on create room ([3261401](https://github.com/pedrosobral/rsa-backend/commit/3261401))
+* **rooms:** code should be unique ([95ee36d](https://github.com/pedrosobral/rsa-backend/commit/95ee36d))
+* **rooms:** remove hooks ([e4d7501](https://github.com/pedrosobral/rsa-backend/commit/e4d7501))
+* **socket.io:** handle students online ([dbc455d](https://github.com/pedrosobral/rsa-backend/commit/dbc455d))
+* **users:** add name ([509b729](https://github.com/pedrosobral/rsa-backend/commit/509b729))
+
+
+
 <a name="0.6.0"></a>
 # [0.6.0](https://github.com/pedrosobral/rsa-backend/compare/0.5.0...v0.6.0) (2017-04-19)
 
