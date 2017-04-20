@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 const processData = require('../../hooks/process-data');
 
 
