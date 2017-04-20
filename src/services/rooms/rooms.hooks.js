@@ -2,12 +2,16 @@
 
 
 
+const processData = require('../../hooks/process-data');
+
+
+
 module.exports = {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [],
+    create: [processData()],
     update: [],
     patch: [],
     remove: []

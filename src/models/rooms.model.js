@@ -12,6 +12,8 @@ module.exports = function (app) {
   });
 
   const rooms = new mongooseClient.Schema({
+    user: { type: mongooseClient.Schema.Types.ObjectId, ref: 'users' },
+
     name: { type: String, required: true },
     code: { type: String, required: true },
     students: [student],
