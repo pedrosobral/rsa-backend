@@ -10,6 +10,8 @@ const polls = require('./polls/polls.service.js');
 
 const rooms = require('./rooms/rooms.service.js');
 
+const attendance = require('./attendance/attendance.service.js');
+
 module.exports = function () {
   const app = this; // eslint-disable-line no-unused-vars
   app.configure(users);
@@ -17,4 +19,5 @@ module.exports = function () {
   app.configure(questions);
   app.configure(polls);
   app.configure(rooms);
+  app.configure(attendance);
 };
