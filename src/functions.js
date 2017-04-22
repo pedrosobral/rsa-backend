@@ -12,6 +12,8 @@ module.exports = socketio(function(io) {
    * @param  {string} student student id
    */
   const logout = (room, student) => {
+    if (!room || !student) return;
+
     logger.info('logout student', room, student);
     app.service('rooms').patch(room._id, {
       $set: {
@@ -20,6 +22,7 @@ module.exports = socketio(function(io) {
     }, {
       query: {
         'students.id': student,
+        '$select': ['']
       }
     });
   };
