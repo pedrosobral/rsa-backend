@@ -4,6 +4,10 @@ const processData = require('../../hooks/process-data');
 
 
 
+const filterStudents = require('../../hooks/filter-students');
+
+
+
 module.exports = {
   before: {
     all: [],
@@ -17,7 +21,7 @@ module.exports = {
 
   after: {
     all: [],
-    find: [],
+    find: [filterStudents()],
     get: [],
     create: [],
     update: [],
