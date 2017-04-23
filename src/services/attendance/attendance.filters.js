@@ -1,6 +1,31 @@
 /* eslint no-console: 1 */
-console.warn('You are using the default filter for the attendance service. For more information about event filters see https://docs.feathersjs.com/api/events.html#event-filtering'); // eslint-disable-line no-console
+module.exports = {
+  patched: [
+    function(data, connection, hook) {
 
-module.exports = function (data, connection, hook) { // eslint-disable-line no-unused-vars
-  return data;
+      if (!connection.user) {
+        // case end attendance
+        // should propagate to all connections
+        if (hook.data.online === false) {
+          return true;
+        }
+
+        return false;
+      }
+
+      return data;
+    },
+  ],
+  created: [
+    function(data, connection, hook) {
+
+      // remove sensitive for unauthenticated  users
+      if (!connection.user) {
+        delete data.code;
+        delete data.students;
+      }
+
+      return data;
+    }
+  ]
 };
