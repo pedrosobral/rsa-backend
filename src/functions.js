@@ -97,6 +97,8 @@ module.exports = socketio(function(io) {
     });
 
     socket.on('anonymous leave room', () => {
+      if (!socket.room) return;
+
       inc(socket.room._id, -1);
       delete socket.room;
     });
