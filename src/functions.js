@@ -46,6 +46,15 @@ module.exports = socketio(function(io) {
     app.service('rooms').patch(id, {
       'peopleOnline': 0
     });
+
+    // force clear
+    app.service('rooms').patch(id, {
+      'students.$.online': false,
+    }, {
+      query: {
+        'students.online': true,
+      }
+    });
   };
 
   io.on('connection', function(socket) {
