@@ -1,3 +1,26 @@
+<a name="0.7.1"></a>
+## [0.7.1](https://github.com/pedrosobral/rsa-backend/compare/0.7.0...v0.7.1) (2017-04-23)
+
+
+### Bug Fixes
+
+* **filter:** check hook result about data ([321eecb](https://github.com/pedrosobral/rsa-backend/commit/321eecb))
+* **filter-students:** check room ([80cdac4](https://github.com/pedrosobral/rsa-backend/commit/80cdac4))
+* **logout:** guard check and don't return anything ([1f14150](https://github.com/pedrosobral/rsa-backend/commit/1f14150))
+* **rooms:** force clear who is set to online ([72e03ca](https://github.com/pedrosobral/rsa-backend/commit/72e03ca))
+* **socket:** check room ([89583c5](https://github.com/pedrosobral/rsa-backend/commit/89583c5))
+
+
+### Features
+
+* **attendance:** add filter on create and patched ([0bc1b6c](https://github.com/pedrosobral/rsa-backend/commit/0bc1b6c))
+* **attendance:** add room name ([c95112b](https://github.com/pedrosobral/rsa-backend/commit/c95112b))
+* **attendance:** basic attendance service ([e10a814](https://github.com/pedrosobral/rsa-backend/commit/e10a814))
+* **attendance:** wip model ([b3dfa3a](https://github.com/pedrosobral/rsa-backend/commit/b3dfa3a))
+* **rooms-filter:** filter students on login and logout ([a51f01c](https://github.com/pedrosobral/rsa-backend/commit/a51f01c))
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/pedrosobral/rsa-backend/compare/0.6.0...v0.7.0) (2017-04-20)
 
