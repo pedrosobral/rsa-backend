@@ -1,3 +1,15 @@
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/pedrosobral/rsa-backend/compare/0.7.1...v0.8.0) (2017-04-25)
+
+
+### Features
+
+* **heroku:** heroku setup ([b234121](https://github.com/pedrosobral/rsa-backend/commit/b234121))
+* **mongodb:** add mongo atlas url to config ([839a42b](https://github.com/pedrosobral/rsa-backend/commit/839a42b))
+* **rooms:** filter patched on room to connected users ([2a2fa18](https://github.com/pedrosobral/rsa-backend/commit/2a2fa18))
+
+
+
 <a name="0.7.1"></a>
 ## [0.7.1](https://github.com/pedrosobral/rsa-backend/compare/0.7.0...v0.7.1) (2017-04-23)
 
