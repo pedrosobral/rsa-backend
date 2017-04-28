@@ -18,6 +18,9 @@ module.exports = function (app) {
 
     votes: { type: Number, default: 0},
 
+    // votes
+    students: [],
+
     showChart: { type: Boolean, default: false },
 
     showAnswer: { type: Boolean, default: false },
