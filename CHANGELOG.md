@@ -1,3 +1,14 @@
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/pedrosobral/rsa-backend/compare/0.8.0...v0.9.0) (2017-06-19)
+
+
+### Features
+
+* **models:** relate user to labels, questions and polls. ([b221415](https://github.com/pedrosobral/rsa-backend/commit/b221415))
+* **question:** add students to model ([1b1d3b6](https://github.com/pedrosobral/rsa-backend/commit/1b1d3b6))
+
+
+
 <a name="0.8.0"></a>
 # [0.8.0](https://github.com/pedrosobral/rsa-backend/compare/0.7.1...v0.8.0) (2017-04-25)
 
