@@ -6,6 +6,8 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
 
   const polls = new mongooseClient.Schema({
+    user: { type: mongooseClient.Schema.Types.ObjectId, ref: 'users' },
+
     questions: [],
 
     room: {},

@@ -1,5 +1,6 @@
 'use strict';
 
+const processData = require('../../hooks/process-data');
 
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
     all: [],
     find: [],
     get: [],
-    create: [],
+    create: [processData()],
     update: [],
     patch: [],
     remove: []

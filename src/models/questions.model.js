@@ -6,6 +6,8 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
 
   const questions = new mongooseClient.Schema({
+    user: { type: mongooseClient.Schema.Types.ObjectId, ref: 'users' },
+
     question: { type: {}, required: true },
 
     type: { type: String, required: true, enum: ['mc', 'bool', 'free'] },

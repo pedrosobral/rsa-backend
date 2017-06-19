@@ -6,6 +6,8 @@ module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
 
   const labels = new mongooseClient.Schema({
+    user: { type: mongooseClient.Schema.Types.ObjectId, ref: 'users' },
+
     text: { type: String, required: true },
 
     createdAt: { type: Date, default: Date.now },
