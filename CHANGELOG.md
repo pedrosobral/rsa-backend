@@ -1,3 +1,13 @@
+<a name="0.9.1"></a>
+## [0.9.1](https://github.com/pedrosobral/rsa-backend/compare/0.9.0...v0.9.1) (2017-06-20)
+
+
+### Bug Fixes
+
+* **filter:** comment out filter events for now ([c493fc5](https://github.com/pedrosobral/rsa-backend/commit/c493fc5))
+
+
+
 <a name="0.9.0"></a>
 # [0.9.0](https://github.com/pedrosobral/rsa-backend/compare/0.8.0...v0.9.0) (2017-06-19)
 
