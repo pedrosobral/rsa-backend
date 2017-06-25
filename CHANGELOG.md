@@ -1,3 +1,13 @@
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/pedrosobral/rsa-backend/compare/0.9.1...v0.10.0) (2017-06-25)
+
+
+### Features
+
+* **question:** add anonymous short answers ([9eada66](https://github.com/pedrosobral/rsa-backend/commit/9eada66))
+
+
+
 <a name="0.9.1"></a>
 ## [0.9.1](https://github.com/pedrosobral/rsa-backend/compare/0.9.0...v0.9.1) (2017-06-20)
 
