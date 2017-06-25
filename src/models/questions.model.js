@@ -23,6 +23,9 @@ module.exports = function (app) {
     // votes
     students: [],
 
+    // anonymous short answers
+    anonymousShortAnswers: [],
+
     showChart: { type: Boolean, default: false },
 
     showAnswer: { type: Boolean, default: false },
