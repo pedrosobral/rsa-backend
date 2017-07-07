@@ -1,3 +1,13 @@
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/pedrosobral/rsa-backend/compare/0.10.0...v0.11.0) (2017-07-07)
+
+
+### Features
+
+* **questions:** add image to a question ([482a26d](https://github.com/pedrosobral/rsa-backend/commit/482a26d))
+
+
+
 <a name="0.10.0"></a>
 # [0.10.0](https://github.com/pedrosobral/rsa-backend/compare/0.9.1...v0.10.0) (2017-06-25)
 
