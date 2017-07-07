@@ -12,6 +12,8 @@ module.exports = function (app) {
 
     type: { type: String, required: true, enum: ['mc', 'bool', 'free'] },
 
+    imageUrl: { type: String },
+
     description: { type: String },
 
     options: [],
