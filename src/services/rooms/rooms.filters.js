@@ -7,10 +7,6 @@ module.exports = {
         return false;
       }
 
-      if (connection.user._id.toString() !== data.user.toString()) {
-        return false;
-      }
-
       return data;
     }
   ],
