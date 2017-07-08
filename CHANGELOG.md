@@ -1,3 +1,21 @@
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/pedrosobral/rsa-backend/compare/0.11.0...v0.12.0) (2017-07-08)
+
+
+### Bug Fixes
+
+* **rooms:** filter room info only to students ([33486a2](https://github.com/pedrosobral/rsa-backend/commit/33486a2))
+
+
+### Features
+
+* **labels:** filter to only the user ([6734db9](https://github.com/pedrosobral/rsa-backend/commit/6734db9))
+* **polls:** if user only send to the owner ([a746d87](https://github.com/pedrosobral/rsa-backend/commit/a746d87))
+* **questions:** add filter to send events to just owner ([74be9a1](https://github.com/pedrosobral/rsa-backend/commit/74be9a1))
+* **rooms:** filter to only the user ([0b38c8a](https://github.com/pedrosobral/rsa-backend/commit/0b38c8a))
+
+
+
 <a name="0.11.0"></a>
 # [0.11.0](https://github.com/pedrosobral/rsa-backend/compare/0.10.0...v0.11.0) (2017-07-07)
 
