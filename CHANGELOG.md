@@ -1,3 +1,13 @@
+<a name="0.14.0"></a>
+# [0.14.0](https://github.com/pedrosobral/rsa-backend/compare/0.13.0...v0.14.0) (2017-07-11)
+
+
+### Bug Fixes
+
+* **poll:** add filter, now we have user info, so we can filter by user ([5ff1a48](https://github.com/pedrosobral/rsa-backend/commit/5ff1a48))
+
+
+
 <a name="0.13.0"></a>
 # [0.13.0](https://github.com/pedrosobral/rsa-backend/compare/0.11.0...v0.13.0) (2017-07-10)
 
