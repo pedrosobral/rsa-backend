@@ -1,57 +1,25 @@
-# rsa-backend
+# RSA: Resposta em Sala de Aula
 
-> Resposta em Sala de Aula: Aplicação de votação em tempo real para uso em sala de aula.
+RSA é um projeto *open-source* de um Sistema de Resposta em sala de aula (*Classroom Response System*).
 
-## About
+![RSA](https://lh3.googleusercontent.com/lm3qXBEGuMYLBxobDXIDfYQ_c9O44fRdalgD8rdtravdj6s2BYGlSXor8Hl5xkKr6saJF4el5crfqYCoexGCVrF9Z0dgG6BTx1BRGqWOVBVyq6H2Cx3iNpQaZ26enaxIGazJqHuDh2s=w1198-h545-no)
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
+## Arquitetura do Sistema
 
-## Getting Started
+![Arquitetura](https://lh3.googleusercontent.com/esrnKMICKIJtq0jCO5ai58Rp_JlNUdX0AQkBnh0L9-WTxEtcpTriFWhdj9GpcpWxcLJiD6ZPK2-shGLJpscx0IJtNbz47euMwtdQ05oqaJ_26Ip8FxGDPAq7WE-QdpihKh3QwtyEODY=w1053-h172-no)
 
-Getting up and running is as easy as 1, 2, 3.
+O RSA consiste em dois projetos: a versão cliente para desktop e mobile e o backend (servidor).
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
+Este repositório contém o código backend. 
 
-    ```
-    cd path/to/rsa-backend; npm install
-    ```
+Você vai encontrar o repositório do código cliente em [github.com/pedrosobral/rsa-app](https://github.com/pedrosobral/rsa-app)
 
-3. Start your app
+## Sobre
 
-    ```
-    npm start
-    ```
+Estre projeto foi fruto do Trabalho de Conclusão de Curso de Pedro Henrique do curso de graduação em 
+Engenharia de Computação da Universidade Federal do Vale do São Francisco. Você pode encontrar o 
+referido trabalho em [github.com/pedrosobral/tcc](https://github.com/pedrosobral/tcc)
 
-## Testing
+### Créditos
 
-Simply run `npm test` and all your tests in the `test/` directory will be run.
-
-## Scaffolding
-
-Feathers has a powerful command line interface. Here are a few things it can do:
-
-```
-$ npm install -g feathers-cli             # Install Feathers CLI
-
-$ feathers generate service               # Generate a new Service
-$ feathers generate hook                  # Generate a new Hook
-$ feathers generate model                 # Generate a new Model
-$ feathers help                           # Show all commands
-```
-
-## Help
-
-For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
-
-## Changelog
-
-__0.1.0__
-
-- Initial release
-
-## License
-
-Copyright (c) 2016
-
-Licensed under the [MIT license](LICENSE).
+2017 - [Pedro Henrique](https://github.com/pedrosobral)
